@@ -17,7 +17,7 @@ const Header = () => {
     return (
         <S.Header>
             <S.Logo>
-                <Link to={"/"}><img src={process.env.PUBLIC_URL + "/assets/gina-logo.svg"} alt="logo" /></Link>
+                <Link to={"/portfolio"}><img src={process.env.PUBLIC_URL + "/assets/gina-logo.svg"} alt="logo" /></Link>
             </S.Logo>
             <S.MainMenu>
                 <li><Link to={"/about"}>ABOUT</Link></li>
