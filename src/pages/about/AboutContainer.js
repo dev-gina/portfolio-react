@@ -11,7 +11,6 @@ const AboutContainer = () => {
           <S.SmallImage src="/assets/main2.png" alt="main" />
           <S.SmallImage src="/assets/main3.png" alt="main" />
         </S.ImageGrid>
-        {/* <S.VerticalText>CREATIVE COMPANY</S.VerticalText> */}
       </S.ImageSection>
 
       {/* 우측 텍스트 섹션 */}
