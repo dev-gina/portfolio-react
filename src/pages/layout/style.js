@@ -37,6 +37,7 @@ S.Header = styled.header`
     left: 0;
     z-index: 100;
     box-sizing: border-box; // 패딩이 너비에 포함되도록 설정
+    background-color: #fff;
     
     @media (max-width: 1200px) {
         flex-direction: column;
