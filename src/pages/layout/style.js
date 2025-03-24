@@ -7,7 +7,7 @@ S.Layout = styled.div`
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: linear-gradient(#796465, #DFB9B9);
+    background: 000;
     font-family: "League Spartan";
     position: relative; 
 `;
@@ -75,13 +75,11 @@ S.MainMenu = styled.ul`
     & li {
         cursor: pointer;
         transition: color 0.3s ease-in-out;
-        color: #ffffff;
         white-space: nowrap;
         
         & a {
-            color: #ffffff;
             text-decoration: none;
-            
+            color: #111111;
             &:hover {
                 text-decoration: underline;
             }
@@ -106,7 +104,7 @@ S.Contact = styled.button`
     background: #d9d9d9;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
-    color: #796465;
+    color: #111111;
     white-space: nowrap;
     overflow: visible; 
     padding: 0 20px;

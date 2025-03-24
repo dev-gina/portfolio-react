@@ -11,13 +11,13 @@ const Header = () => {
 
     // to send sms
     const handleSendSMS = () => {
-        window.location.href = "sms:+821099357301";
+        window.location.href = "sms:+821024003252";
     };
 
     return (
         <S.Header>
             <S.Logo>
-                <Link to={"/"}><img src={process.env.PUBLIC_URL + "/assets/logo_white.svg"} alt="logo" /></Link>
+                <Link to={"/"}><img src={process.env.PUBLIC_URL + "/assets/gina-logo.svg"} alt="logo" /></Link>
             </S.Logo>
             <S.MainMenu>
                 <li><Link to={"/about"}>ABOUT</Link></li>
@@ -35,7 +35,7 @@ const Header = () => {
                 <S.PopupContent>
                     <S.ContactItem onClick={handleSendSMS}>
                         <S.ContactIcon src={process.env.PUBLIC_URL + "/assets/phone.svg"} alt="phone" />
-                        <S.ContactText>Mobile: (+82)010-9935-7301</S.ContactText>
+                        <S.ContactText>Mobile: (+82)010-2400-3252</S.ContactText>
                     </S.ContactItem>
                     <S.ContactNote>Click to send SMS</S.ContactNote>
                 </S.PopupContent>

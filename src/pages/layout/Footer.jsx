@@ -7,9 +7,9 @@ const Footer = () => {
   
   // SNS info 
   const snsData = [
-    { id: 'linkedin', url: 'https://www.linkedin.com/in/jane-ryo', display: 'Jane Ryo' },
-    { id: 'notion', url: 'https://spice-geography-ce1.notion.site/1669b8638a5a80c18b8aefcf4745da35', display: 'https://spice-geography-ce1.notion.site/1669b8638a5a80c18b8aefcf4745da35' },
-    { id: 'github', url: 'https://github.com/dev-jane99', display: 'https://github.com/dev-jane99' }
+    { id: 'blog', url: 'https://blog.naver.com/ah_1113', display: 'Gina Lee' },
+    { id: 'notion', url: 'https://puddle-respect-e32.notion.site/832-166b39fd758c80689ce6ddfebefd6f12', display: 'https://puddle-respect-e32.notion.site/832-166b39fd758c80689ce6ddfebefd6f12' },
+    { id: 'github', url: 'https://github.com/dev-gina', display: 'https://github.com/dev-gina' }
   ];
   
   const handleSnsClick = (sns) => {
@@ -44,11 +44,11 @@ const Footer = () => {
         ))}
       </S.Sns>
       <S.BottomLogo>
-        <img src={process.env.PUBLIC_URL + "/assets/logo.svg"} alt="logo" />
+        <img src={process.env.PUBLIC_URL + "/assets/gina-logo.svg"} alt="logo" />
       </S.BottomLogo>
       <S.FooterInfo>
         <p>Portfolio purpose</p>
-        <p>Update 00.00.2025</p>
+        <p>Update 2025ver</p>
       </S.FooterInfo>
     </S.Footer>
   )
