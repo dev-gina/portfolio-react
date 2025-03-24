@@ -1,60 +1,95 @@
-import { styled } from 'styled-components';
+import styled from "styled-components";
 
-const S = {};
-
-S.AboutWrap = styled.div`
+const Container = styled.div`
   display: flex;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
-  padding: 100px;
-`;
-
-S.TimelineContainer = styled.div`
-  max-width: 900px;
+  justify-content: space-between;
   width: 100%;
-  margin: 50px 0;
-  padding: 20px;
-`;
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 20px;
 
-S.TimelineItem = styled.div`
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-  border-radius: 8px;
-  margin: 20px 0;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: relative;
-
-  &:nth-child(odd) {
-    background-color: #e9e9e9;
+  @media (max-width: 768px) {
+    flex-direction: column;
   }
 `;
 
-S.TimelineDate = styled.div`
-  font-size: 14px;
-  color: #777;
-  margin-bottom: 10px;
+const ImageSection = styled.div`
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
-S.TimelineContent = styled.div`
-  h3 {
-    font-size: 20px;
+const ImageGrid = styled.div`
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+  width: 100%;
+  max-width: 500px;
+`;
+
+const MainImage = styled.img`
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+`;
+
+const SmallImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+`;
+
+const VerticalText = styled.span`
+  position: absolute;
+  left: 10px;
+  transform: rotate(-90deg);
+  font-size: 14px;
+  letter-spacing: 2px;
+`;
+
+const TextSection = styled.div`
+  flex: 1;
+  padding-left: 50px;
+
+  h2 {
+    font-size: 24px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
   }
 
   p {
     font-size: 16px;
-    color: #333;
-    margin-bottom: 10px;
+    color: #666;
+    line-height: 1;
   }
 
-  span {
-    font-size: 14px;
-    color: #555;
+  @media (max-width: 768px) {
+    padding-left: 0;
+    text-align: center;
+    margin-top: 20px;
   }
 `;
+
+const S = {
+  Container,
+  ImageSection,
+  ImageGrid,
+  MainImage,
+  SmallImage,
+  VerticalText,
+  TextSection,
+};
 
 export default S;

@@ -7,7 +7,7 @@ const Projects = () => {
     <div>
         <S.Projects>
             <S.Project>
-              <h1>Gina's portfolio</h1>
+               <S.Main src="/assets/main.jpg" alt="main" />
             </S.Project>
         </S.Projects>
         <Footer />

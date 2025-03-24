@@ -216,20 +216,8 @@ S.Footer = styled.footer`
     bottom: 0;
     left: 0;
     box-sizing: border-box;
+    background-color: #fff;
 `;
-
-
-// S.Sns = styled.div`
-//     margin-left: 15px;
-//     display: flex; // flex로 변경하여 자식 요소들을 정렬
-//     gap: 20px; // 아이콘 사이 간격 20px 설정
-    
-//     & img {
-//         width: 20px;
-//         height: 20px;
-//     }
-    
-// `;
 
 // style.js에 추가할 내용
 S.Sns = styled.div`
