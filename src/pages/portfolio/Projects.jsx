@@ -9,7 +9,7 @@ const Projects = () => {
         {/* 첫 번째 프로젝트 */}
         <S.ProjectItem>
         <S.RightSection>
-            <S.Main src="your-image-url-1.jpg" alt="Online Bookstore" />
+            <S.Main src="/assets/bookstore.png" alt="Online Bookstore" />
           </S.RightSection>
           <S.LeftSection>
             <S.ProjectContent>Online Bookstore</S.ProjectContent>
@@ -20,21 +20,27 @@ const Projects = () => {
             </S.ProjectDetails>
 
             <S.ProjectDetails>
-              <S.SectionTitle>Tools</S.SectionTitle>
+              <S.SectionTitle>Tech Stack</S.SectionTitle>
               <ul>
                 <li><strong>Frontend:</strong> Next.js, TypeScript, React Hooks</li>
-                <li><strong>Backend:</strong> Node.js, Express</li>
-                <li><strong>Tools:</strong> Swagger, Postman, MySQL</li>
-                <li><strong>Deployment:</strong> Netlify, Heroku</li>
+                <li><strong>Backend:</strong> Node.js, Express, MySQL</li>
+                <li><strong>Tools:</strong> Swagger, Postman</li>
+                {/* <li><strong>Deployment:</strong> Netlify, Heroku</li> */}
               </ul>
             </S.ProjectDetails>
+
+            <S.ProjectDetails>
+              <S.SectionTitle>Duration</S.SectionTitle>
+              <ul><li>Personal project, completed in 1 week</li></ul>
+            </S.ProjectDetails>
+
           </S.LeftSection>
         </S.ProjectItem>
 
         {/* 두 번째 프로젝트 */}
         <S.ProjectItem>
         <S.RightSection>
-            <S.Main src="your-image-url-2.jpg" alt="Calendar App" />
+            <S.Main src="/assets/calendar.png" alt="Calendar App" />
           </S.RightSection>
           <S.LeftSection>
             <S.ProjectContent>Calendar App</S.ProjectContent>
@@ -45,20 +51,26 @@ const Projects = () => {
             </S.ProjectDetails>
 
             <S.ProjectDetails>
-              <S.SectionTitle>Tools</S.SectionTitle>
+              <S.SectionTitle>Tech Stack</S.SectionTitle>
               <ul>
                 <li><strong>Frontend:</strong> React, Ant Design, Context API</li>
-                <li><strong>Backend:</strong> Spring Boot, JPA, Security</li>
-                <li><strong>Tools:</strong> Swagger, Postman, MySQL</li>
+                <li><strong>Backend:</strong> Spring Boot, MySQL, Security</li>
+                <li><strong>Tools:</strong> Swagger, Postman</li>
               </ul>
             </S.ProjectDetails>
+
+            <S.ProjectDetails>
+              <S.SectionTitle>Duration</S.SectionTitle>
+              <ul><li>Personal project, completed in 2 week</li></ul>
+            </S.ProjectDetails>
+
           </S.LeftSection>
         </S.ProjectItem>
 
         {/* 세 번째 프로젝트 */}
         <S.ProjectItem>
         <S.RightSection>
-            <S.Main src="your-image-url-3.jpg" alt="Pet Tech Service" />
+            <S.Main src="/assets/powpow.png" alt="Pet Tech Service" />
           </S.RightSection>
           <S.LeftSection>
             <S.ProjectContent>POWPOW</S.ProjectContent>
@@ -69,17 +81,17 @@ const Projects = () => {
             </S.ProjectDetails>
 
             <S.ProjectDetails>
-              <S.SectionTitle>Tools</S.SectionTitle>
+              <S.SectionTitle>Tech Stack</S.SectionTitle>
               <ul>
                 <li><strong>Frontend:</strong> React, Context API</li>
-                <li><strong>Backend:</strong> Spring Boot, JWT, Spring Security</li>
-                <li><strong>Tools:</strong> Swagger, Postman, MySQL</li>
+                <li><strong>Backend:</strong> Spring Boot, JWT, MySQL</li>
+                <li><strong>Tools:</strong> Swagger, Postman</li>
               </ul>
             </S.ProjectDetails>
 
             <S.ProjectDetails>
               <S.SectionTitle>Duration</S.SectionTitle>
-              <p>Team of 7 members, 3 months duration</p>
+              <ul><li>Team of 7 members, 3 months duration</li></ul>
             </S.ProjectDetails>
 
           </S.LeftSection>

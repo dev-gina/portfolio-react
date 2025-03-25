@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { Link } from 'react-router-dom';
 import S from "./style"
 
 const Footer = () => {
@@ -44,7 +45,7 @@ const Footer = () => {
         ))}
       </S.Sns>
       <S.BottomLogo>
-        <img src={process.env.PUBLIC_URL + "/assets/gina-logo.svg"} alt="logo" />
+          <Link to={"/about"}><img src={process.env.PUBLIC_URL + "/assets/gina-logo.svg"} alt="logo" /></Link>
       </S.BottomLogo>
       <S.FooterInfo>
         <p>Portfolio purpose</p>
