@@ -2,25 +2,29 @@ import styled from 'styled-components';
 
 // 전체 프로젝트 컨테이너
 const ProjectsContainer = styled.div`
-  max-width: 1440px;
-  height: 640px;
+  max-width: 1360px;
   display: flex;
-  margin-top: 160px;
   gap: 20px;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  padding-top: 0; 
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 // 개별 프로젝트 아이템
 const ProjectItem = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100%;
+  width: 320px; 
+  height: 740px; 
   background-color: #ffffff;
-  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1); 
-  overflow: hidden; 
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
-    transform: translateY(-5px); 
+    transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
 `;
@@ -28,23 +32,24 @@ const ProjectItem = styled.div`
 // 이미지 영역
 const RightSection = styled.div`
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
+  height: 200px; 
   
   img {
-    width: 95%;
-    height: 200px;
-    object-fit: cover;
-    margin-top: 10px;
+    width: 100%;  
+    height: 200px; 
+    object-fit: cover; 
   }
 `;
 
 // 내용 영역
 const LeftSection = styled.div`
-  padding: 16px; 
+  padding: 16px;
   flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: space-between; 
 `;
 
 // 프로젝트 제목
@@ -82,12 +87,13 @@ const MobileSection = styled.div`
   @media (max-width: 768px) {
     ${ProjectItem} {
       flex-direction: column;
+      width: 100%; 
     }
   }
 `;
 
 const S = {
-  ProjectsContainer,
+  ProjectsContainer,  // 프로젝트 컨테이너
   ProjectItem,
   LeftSection,
   RightSection,

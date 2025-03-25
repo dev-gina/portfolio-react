@@ -7,9 +7,10 @@ S.Layout = styled.div`
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: 000;
     font-family: "League Spartan";
     position: relative; 
+    scroll-behavior: smooth;
+    padding-top: 100px;
 `;
 
 S.Content = styled.div`
@@ -19,10 +20,10 @@ S.Content = styled.div`
     align-items: center;
     padding: 80px 20px;
     margin-bottom: 60px;
-    width: 100%; // 너비 100% 지정
-    max-width: 1440px; // 최대 너비 설정
-    margin-left: auto; // 중앙 정렬
-    margin-right: auto; // 중앙 정렬
+    width: 100%;
+    max-width: 1440px; 
+    margin-left: auto; 
+    margin-right: auto;
     box-sizing: border-box;
 `;
 
@@ -31,20 +32,20 @@ S.Header = styled.header`
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    background: #ffffff;
     padding: 15px 20px;  
     position: fixed;  
     top: 0;
     left: 0;
     z-index: 100;
-    box-sizing: border-box; // 패딩이 너비에 포함되도록 설정
-    background-color: #fff;
+    box-sizing: border-box; 
     
     @media (max-width: 1200px) {
         flex-direction: column;
         gap: 15px;
     }
         & > div, & > ul, & > button {
-        flex-shrink: 0; // 헤더의 자식 요소들이 축소되지 않도록
+        flex-shrink: 0;
     }
 `;
 
@@ -76,11 +77,13 @@ S.MainMenu = styled.ul`
     & li {
         cursor: pointer;
         transition: color 0.3s ease-in-out;
+        color: #ffffff;
         white-space: nowrap;
         
         & a {
+            color: #000000;
             text-decoration: none;
-            color: #111111;
+            
             &:hover {
                 text-decoration: underline;
             }
@@ -102,10 +105,10 @@ S.Contact = styled.button`
     font-weight: bold;
     border-radius: 50px;
     border: none;
-    background: #d9d9d9;
+    background: #919191;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
-    color: #111111;
+    color: #ffffff;
     white-space: nowrap;
     overflow: visible; 
     padding: 0 20px;
@@ -120,7 +123,7 @@ S.Contact = styled.button`
     }
 `;
 
-// style.js에 추가할 내용
+
 S.ContactPopup = styled.div`
     position: fixed;
     top: 50%;
@@ -148,7 +151,7 @@ S.PopupClose = styled.button`
     border: none;
     font-size: 24px;
     cursor: pointer;
-    color: #796465;
+    color: #000000;
     line-height: 1;
     padding: 0;
     margin: 0;
@@ -216,14 +219,13 @@ S.Footer = styled.footer`
     bottom: 0;
     left: 0;
     box-sizing: border-box;
-    background-color: #fff;
+    background: #ffffff;
 `;
 
-// style.js에 추가할 내용
 S.Sns = styled.div`
   margin-left: 15px;
   display: flex;
-  gap: 20px; // 아이콘 사이 간격 20px
+  gap: 20px;
   
   & img {
     width: 20px;
@@ -232,7 +234,7 @@ S.Sns = styled.div`
     transition: transform 0.2s ease;
     
     &:hover {
-      transform: scale(1.2); // 호버 시 약간 확대
+      transform: scale(1.2); 
     }
   }
   
