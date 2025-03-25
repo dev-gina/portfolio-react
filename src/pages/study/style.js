@@ -81,6 +81,7 @@ const StudyCard = styled.div`
     margin-bottom: 10px;
     flex-grow: 1;
     flex-shrink: 0;
+    white-space: pre-line; /* \n을 줄바꿈으로 처리 */
   }
 
   a {
